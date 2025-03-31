@@ -16,3 +16,4 @@ D:\Git\TelegramBotBuilder\obj\Release\net8.0\refint\TelegramBotBuilder.dll
 D:\Git\TelegramBotBuilder\obj\Release\net8.0\TelegramBotBuilder.pdb
 D:\Git\TelegramBotBuilder\obj\Release\net8.0\TelegramBotBuilder.genruntimeconfig.cache
 D:\Git\TelegramBotBuilder\obj\Release\net8.0\ref\TelegramBotBuilder.dll
+D:\Git\TelegramBotBuilder\obj\Release\net8.0\TelegramBotBuilder.sourcelink.json

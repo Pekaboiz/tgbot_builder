@@ -16,3 +16,4 @@ D:\Git\TelegramBotBuilder\obj\Debug\net8.0\TelegramBotBuilder.csproj.AssemblyRef
 D:\Git\TelegramBotBuilder\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Git\TelegramBotBuilder\bin\Debug\net8.0\Telegram.Bot.dll
 D:\Git\TelegramBotBuilder\obj\Debug\net8.0\Telegram.8D2FC33E.Up2Date
+D:\Git\TelegramBotBuilder\obj\Debug\net8.0\TelegramBotBuilder.sourcelink.json

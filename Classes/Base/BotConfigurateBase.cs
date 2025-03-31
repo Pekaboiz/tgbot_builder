@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Telegram.Bot;
+﻿using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 
 namespace TelegramBotBuilder
 {
-    public class BotConfigurate
+    public abstract class BotConfigurateBase : IBotConfigurator
     {
-        public ITelegramBotClient botClient;
-        ReceiverOptions receiverOptions;
-        public BotConfigurate(ITelegramBotClient _bot)
+        protected ITelegramBotClient botClient;
+        protected ReceiverOptions receiverOptions;
+        public BotConfigurateBase(ITelegramBotClient _bot)
         {
             botClient = _bot;
             receiverOptions = new ReceiverOptions();
@@ -33,7 +27,7 @@ namespace TelegramBotBuilder
             botClient.StartReceiving(new DefaultUpdateHandler(HandleUpdateAsync, HandleErrorAsync), receiverOptions, cts.Token);
 
 
-            await Task.Delay(1);
+            await Task.Delay(-1);
         }
 
         public virtual async Task HandleUpdateAsync(ITelegramBotClient client, Update update, CancellationToken token)
@@ -61,7 +55,7 @@ namespace TelegramBotBuilder
 
         public virtual async Task HandleErrorAsync(ITelegramBotClient client, Exception exception, HandleErrorSource source, CancellationToken token)
         {
-            throw new NotImplementedException();
+            await Task.CompletedTask;
         }
     }
 }

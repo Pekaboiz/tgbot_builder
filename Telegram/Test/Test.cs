@@ -2,7 +2,7 @@
 
 namespace TelegramBotBuilder
 {
-    public class BotControllerTests : BotConrtollerBase
+    public class BotControllerTests : BotControllerBase
     {
         public BotControllerTests(string path, string token, string nameJSON) : base(path, token, nameJSON) { }
 

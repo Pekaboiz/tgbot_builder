@@ -8,13 +8,13 @@ using TelegramBotBuilder;
 
 namespace TelegramBotBuilder
 {
-    public abstract class BotConrtollerBase : IBotConroller
+    public abstract class BotControllerBase : IBotController
     {
         protected ITelegramBotClient? botClient { get; set; }
         protected string _tempPath { get; set; }
         protected string _token { get; set; }
         protected string _nameJSON { get; set; }
-        public BotConrtollerBase(string path, string token, string nameJSON)
+        public BotControllerBase(string path, string token, string nameJSON)
         {
             _tempPath = Path.Combine(path, nameJSON);
             _token = token;

@@ -2,7 +2,7 @@
 
 namespace TelegramBotBuilder
 {
-    public interface IBotConroller
+    public interface IBotController
     {
         public void TelegramConfig();
 

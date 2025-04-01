@@ -4,7 +4,7 @@
     {
         static async Task Main(string[] args)
         {
-            BotControllerTests conrtoller = new BotControllerTests(@"YOUR_PATH", "YOUR_TOKEN", "YOUR_CGF.json");
+            BotControllerTests conrtoller = new BotControllerTests(@"PATH", "TOKEN", "CONFIG.json");
 
             if (args.Length > 0 && args[0] == "/genconfig")
             {

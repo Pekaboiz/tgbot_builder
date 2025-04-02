@@ -8,13 +8,14 @@ namespace TelegramBotBuilder
     {
         protected ITelegramBotClient botClient;
         protected ReceiverOptions receiverOptions;
+        public bool IsBotRunning { get; protected set; }
         public BotConfigurateBase(ITelegramBotClient _bot)
         {
             botClient = _bot;
             receiverOptions = new ReceiverOptions();
             SetBotSettings();
         }
-        
+
         public virtual async void SetBotSettings()
         {
             using var cts = new CancellationTokenSource();
@@ -25,7 +26,6 @@ namespace TelegramBotBuilder
             };
 
             botClient.StartReceiving(new DefaultUpdateHandler(HandleUpdateAsync, HandleErrorAsync), receiverOptions, cts.Token);
-
 
             await Task.Delay(-1);
         }
@@ -40,6 +40,7 @@ namespace TelegramBotBuilder
 
             long chatId = message.Chat.Id;
 
+            IsBotRunning = true;
             Console.WriteLine("Bot get the massage from user!");
 
             string responseText = messageText switch
@@ -52,9 +53,9 @@ namespace TelegramBotBuilder
             await client.SendMessage(chatId, responseText, cancellationToken: token);
         }
 
-
         public virtual async Task HandleErrorAsync(ITelegramBotClient client, Exception exception, HandleErrorSource source, CancellationToken token)
         {
+            IsBotRunning = false;
             await Task.CompletedTask;
         }
     }

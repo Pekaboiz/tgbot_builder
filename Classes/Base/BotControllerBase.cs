@@ -14,6 +14,8 @@ namespace TelegramBotBuilder
         protected string _tempPath { get; set; }
         protected string _token { get; set; }
         protected string _nameJSON { get; set; }
+        protected BotConfigurateBase? botCfg;
+
         public BotControllerBase(string path, string token, string nameJSON)
         {
             _tempPath = Path.Combine(path, nameJSON);
@@ -25,14 +27,23 @@ namespace TelegramBotBuilder
         {
             if (!File.Exists(_tempPath) && _token != null)
             {
-                ConfigGenerator config = new ConfigGenerator(_tempPath, _token);
+                ConfigGeneratorBase config = new ConfigGeneratorTest(_tempPath, _token);
             }
         }
 
         public virtual void TelegramStart()
         {
             BotConnect();
-            if (botClient != null) { BotConfigurateBase botCfg = new BotConfigurate(botClient); }
+            if (botClient != null) { botCfg = new BotConfigurateTests(botClient); }
+        }
+
+        public virtual bool IsBotActive()
+        {
+            if (botCfg != null)
+            {
+                return botCfg.IsBotRunning;
+            }
+            else return false;
         }
 
         // Connect Telegram Bot
@@ -40,8 +51,9 @@ namespace TelegramBotBuilder
         {
             if (_tempPath != null)
             {
-                BotSetup telegram = new BotSetup(_tempPath);
-                TelgramBot? _bot = telegram.bot;
+                TelgramBotBase telgramBotBase = new TelgramBotTest();
+                BotSetupBase telegram = new BotSetupTest(_tempPath, telgramBotBase);
+                TelgramBotBase? _bot = telegram.bot;
 
                 if (_bot != null && _bot.Token != null)
                 {

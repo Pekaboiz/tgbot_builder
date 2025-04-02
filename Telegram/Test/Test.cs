@@ -8,8 +8,8 @@ namespace TelegramBotBuilder
 
     }
 
-    public class BotConfigurate : BotConfigurateBase
+    public class BotConfigurateTests : BotConfigurateBase
     {
-        public BotConfigurate(ITelegramBotClient _bot) : base(_bot) { }
+        public BotConfigurateTests(ITelegramBotClient _bot) : base(_bot) { }
     }
 }

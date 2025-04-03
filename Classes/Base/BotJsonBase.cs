@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TelegramBotBuilder
 {
-    public class TelgramBotBase
+    public abstract class TelgramBotBase
     {
         public string? Token { get; set; }
     }
-    public class RootBotBase
+    public abstract class RootBotBase
     {
         public TelgramBotBase? botConfig;
     }

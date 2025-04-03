@@ -21,8 +21,8 @@ namespace TelegramBotBuilder
         // Create the configuration file for the bot
         protected virtual void GenerateBaseConfig(string _token)
         {
-            TelgramBotBase bot = new TelgramBotBase { Token = _token }; // attributes of the bot
-            RootBotBase rootBot = new RootBotBase { botConfig = bot }; // root of the bot
+            TelgramBotTest bot = new TelgramBotTest { Token = _token }; // attributes of the bot
+            RootBotTest rootBot = new RootBotTest { botConfig = bot }; // root of the bot
 
             JObject config = JObject.FromObject(rootBot);
 

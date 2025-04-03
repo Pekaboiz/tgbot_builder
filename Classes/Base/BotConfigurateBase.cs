@@ -8,7 +8,6 @@ namespace TelegramBotBuilder
     {
         protected ITelegramBotClient botClient;
         protected ReceiverOptions receiverOptions;
-        public bool IsBotRunning { get; protected set; }
         public BotConfigurateBase(ITelegramBotClient _bot)
         {
             botClient = _bot;
@@ -40,7 +39,6 @@ namespace TelegramBotBuilder
 
             long chatId = message.Chat.Id;
 
-            IsBotRunning = true;
             Console.WriteLine("Bot get the massage from user!");
 
             string responseText = messageText switch
@@ -55,7 +53,6 @@ namespace TelegramBotBuilder
 
         public virtual async Task HandleErrorAsync(ITelegramBotClient client, Exception exception, HandleErrorSource source, CancellationToken token)
         {
-            IsBotRunning = false;
             await Task.CompletedTask;
         }
     }

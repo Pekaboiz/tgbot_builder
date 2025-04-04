@@ -37,10 +37,14 @@ namespace TelegramBotBuilder
             if (botClient != null) { botCfg = new BotConfigurateTests(botClient); }
         }
 
-        public virtual bool IsBotActive()
+        public async virtual Task<bool> IsBotActive()
         {
-            if (botClient?.GetMe() == null) { return false; }
-            return true;
+            if (botClient != null)
+            {
+                if (await botClient.GetMe() == null) { return false; }
+                return true;
+            }
+            return false;
         }
 
         // Connect Telegram Bot

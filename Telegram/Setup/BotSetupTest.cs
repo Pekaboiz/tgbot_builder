@@ -10,14 +10,15 @@ using Newtonsoft.Json;
 namespace TelegramBotBuilder
 {
     // Classes for the configuration of the bot
-    public class TelgramBotTest : TelgramBotBase
-    {
-        public new string? Token { get; set; }
-    }
-
+    [Serializable]
     public class RootBotTest : RootBotBase
     {
         public new TelgramBotTest? botConfig { get; set; }
+    }
+
+    public class TelgramBotTest : TelgramBotBase
+    {
+        public new string? Token { get; set; }
     }
 
     public class BotSetupTest : BotSetupBase

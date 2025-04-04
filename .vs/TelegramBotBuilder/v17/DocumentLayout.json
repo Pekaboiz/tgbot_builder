@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Git\\TelegramBotBuilder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|d:\\git\\telegrambotbuilder\\telegram\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|solutionrelative:telegram\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|d:\\git\\telegrambotbuilder\\classes\\base\\configgeneratorbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|solutionrelative:classes\\base\\configgeneratorbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|d:\\git\\telegrambotbuilder\\classes\\base\\botcontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|solutionrelative:classes\\base\\botcontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|d:\\git\\telegrambotbuilder\\classes\\base\\botconfiguratebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|solutionrelative:classes\\base\\botconfiguratebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|d:\\git\\telegrambotbuilder\\classes\\base\\botcontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|solutionrelative:classes\\base\\botcontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|d:\\git\\telegrambotbuilder\\telegram\\setup\\botsetuptest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|solutionrelative:telegram\\setup\\botsetuptest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|d:\\git\\telegrambotbuilder\\telegram\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99E5C1D-96CE-42A4-96A7-6F780967D4E1}|TelegramBotBuilder.csproj|solutionrelative:telegram\\test\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConfigGeneratorBase.cs",
+              "DocumentMoniker": "D:\\Git\\TelegramBotBuilder\\Classes\\Base\\ConfigGeneratorBase.cs",
+              "RelativeDocumentMoniker": "Classes\\Base\\ConfigGeneratorBase.cs",
+              "ToolTip": "D:\\Git\\TelegramBotBuilder\\Classes\\Base\\ConfigGeneratorBase.cs",
+              "RelativeToolTip": "Classes\\Base\\ConfigGeneratorBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T18:22:43.965Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -50,31 +71,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "BotSetupTest.cs",
+              "DocumentMoniker": "D:\\Git\\TelegramBotBuilder\\Telegram\\Setup\\BotSetupTest.cs",
+              "RelativeDocumentMoniker": "Telegram\\Setup\\BotSetupTest.cs",
+              "ToolTip": "D:\\Git\\TelegramBotBuilder\\Telegram\\Setup\\BotSetupTest.cs",
+              "RelativeToolTip": "Telegram\\Setup\\BotSetupTest.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T10:19:22.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BotControllerBase.cs",
               "DocumentMoniker": "D:\\Git\\TelegramBotBuilder\\Classes\\Base\\BotControllerBase.cs",
               "RelativeDocumentMoniker": "Classes\\Base\\BotControllerBase.cs",
               "ToolTip": "D:\\Git\\TelegramBotBuilder\\Classes\\Base\\BotControllerBase.cs",
               "RelativeToolTip": "Classes\\Base\\BotControllerBase.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T14:47:46.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BotConfigurateBase.cs",
               "DocumentMoniker": "D:\\Git\\TelegramBotBuilder\\Classes\\Base\\BotConfigurateBase.cs",
               "RelativeDocumentMoniker": "Classes\\Base\\BotConfigurateBase.cs",
               "ToolTip": "D:\\Git\\TelegramBotBuilder\\Classes\\Base\\BotConfigurateBase.cs",
               "RelativeToolTip": "Classes\\Base\\BotConfigurateBase.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T14:47:43.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Test.cs",
               "DocumentMoniker": "D:\\Git\\TelegramBotBuilder\\Telegram\\Test\\Test.cs",
               "RelativeDocumentMoniker": "Telegram\\Test\\Test.cs",
